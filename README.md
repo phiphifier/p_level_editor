@@ -5,6 +5,8 @@ To run, while in the p_level_editor folder, run this command: `java main.PLevelE
 
 Should be compatible with java 8 and above, though I've only tested with jdk25  
 
+Beware of running out of heap space! This program is a memory hog. Limiting layer count to only what you need is generally best practice.. With about 4GB of heap space I can safely play with levels with a max size of roughly 2000tilesx2000tilesx20layers  
+
 ![main menu image](./SCREENSHOTS/main_menu.png)
 This is my custom level editor! It isn't quite finished yet, but all base functionality is here. If allows for creating 2D tile based levels with layer support. It Includes basic entity placement, which will place instances of EntityDataHolder. Entity data holders contain x/y coordinates, an id, and an additional number for different states. The ability to change the additional state number is not yet implemented. Backgrounds are handled through the background manager, and follow a similar philosophy to entities, allowing for embedding background data including id, x, y, x and y offsets per screen wrap in pixels, and a boolean for whether or not the background is tiled/repeats. Right clicking the layer buttons on the left side of the editor provides additional options, such as toggle visibility, shift layer up/down, insert new layers, merge down, and delete functions. The entire level can be cropped to only be as large as it needs to be to fit all placed tiles, or enlarged with a changeable point of origin if you need more space.  
 ![editor image](./SCREENSHOTS/editor.png)
