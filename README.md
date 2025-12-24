@@ -25,8 +25,8 @@ Main method is located at main.PLevelEditor.
 
 If you compile and run this, it will create a hidden folder in your home directory named ".plvleditor" for storing settings.  
 
-For the custom UI, the main classes of interest are probably Button, ButtonListener, Menu, MenuStringInputField, and StringInputFieldListener. Most other menus follow a pretty similar design, defining size, position, buttons, and interacting with other helper classes, mostly from the level package.  
+For the custom UI, the main classes of interest are Button, ButtonListener, Menu, MenuStringInputField, and StringInputFieldListener. Most other menus follow a pretty similar design, defining size, position, buttons, and interacting with other helper classes, mostly from the level package. Buttons aren't designed to be instantiated with the new keyword, instead use the addButton, or addButtonWithMouseHoverTip methods inherited by child classes of Menu. As of writing this I realize I should likely make sub menus function the same way, although currently I just instantiate a Menu using the new keyboard within the addSubMenu method.   
 
-For actual level modification, the main classes of interest are MenuEditorTools, MenuLayerSelect, MenuLayerOptions, and anything in the level package.  
+For actual level modification, the main classes of interest in the ui package are are MenuEditorTools, MenuLayerSelect, MenuLayerOptions, and their helper menus, as well as anything in the level package.  
 
-This is just a hobby project of mine. I'm a self taught java programmer, and this project has been huge in helping me learn more about writing java software. With that said, there's bound to be a lot of crust. lol
+This is just a hobby project of mine. I'm a self taught java programmer and this project has been huge in helping me learn more about writing java software. With that said, there's bound to be a lot of crust lol. This project began in October, and is built on about 2 years of experience playing around with java for simple 2D games.
