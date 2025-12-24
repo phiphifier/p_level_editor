@@ -4,7 +4,7 @@ To compile, cd to the folder containing the p_level_editor folder, and run the f
 
 Should be compatible with java 8 and above. Although I've only tested with jdk25
 
-To run, while still in the p_level_editor folder, run this command:
+To run, cd into the p_level_editor folder, run this command:
 `java main.PLevelEditor`
 
 ![main menu image](./SCREENSHOTS/main_menu.png)
