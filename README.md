@@ -17,7 +17,7 @@ The editor is for creating fixed size levels, and populating them with entities 
 
 Swapping out different tilesets is a planned feature, but not yet included.  
 
-The ability to drag a selection box on the tile select menu selecting and placing chunks of tiles with a single click is planned.  
+The ability to drag a selection box on the tile select menu, selecting a chunk of tiles for placement with a single click is planned.  
 
 The ability to quickly crop a single layer and set the resulting chunk of tiles as the cursor placement tiles is also planned.  
 
