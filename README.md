@@ -1,5 +1,5 @@
 Indev  
-To compile, cd into the p_level_editor folder, and run the following command: `javac /*/*.java`  
+To compile, cd into the p_level_editor folder, and run the following command: `javac */*.java`  
 
 To run, while in the p_level_editor folder, run this command: `java main.PLevelEditor`  
 
