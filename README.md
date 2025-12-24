@@ -24,7 +24,7 @@ Swapping out different tilesets is a planned feature, but not yet included.
 
 The ability to drag a selection box on the tile select menu for placing chunks of tiles with a single click is also planned.  
 
-The abality to set quickly crop and set the resulting chunk of tiles as the cursor placement tiles is also planned.  
+The abality to quickly crop a single layer and set the resulting chunk of tiles as the cursor placement tiles is also planned.  
 
 Main method is located at main.PLevelEditor  
 
