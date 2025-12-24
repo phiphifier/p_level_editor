@@ -126,16 +126,16 @@ public class LevelLoader {
 				}
 				else {
 					switch(currentDataSet) {
-						case dataSet.DIMENSIONS: if (currentValueString.length() > 0) {
+						case DIMENSIONS: if (currentValueString.length() > 0) {
 							dimensions[currentIndex] = Integer.valueOf(currentValueString.toString());
 							currentIndex++;
 						}
 					break;
-						case dataSet.TILES: if (currentValueString.length() > 0) {
+						case TILES: if (currentValueString.length() > 0) {
 							tileIDs.add(Integer.valueOf(currentValueString.toString()));
 						}
 					break;
-						case dataSet.ENTITIES: if (currentValueString.length() > 0) {
+						case ENTITIES: if (currentValueString.length() > 0) {
 							currentEntity[currentIndex] = Integer.valueOf(currentValueString.toString());
 							currentIndex++;
 							if (currentIndex >= INDECES_ENTITY_AMOUNT) {
@@ -146,7 +146,7 @@ public class LevelLoader {
 							}
 						}
 					break;
-						case dataSet.BACKGROUNDS: if (currentValueString.length() > 0) {
+						case BACKGROUNDS: if (currentValueString.length() > 0) {
 							currentBackground[currentIndex] = Integer.valueOf(currentValueString.toString());
 							currentIndex++;
 							if (currentIndex >= INDECES_BACKGROUND_AMOUNT) {
@@ -162,12 +162,12 @@ public class LevelLoader {
 					if (currentChar == DELIMITER_NEXT_DATA_SET) {
 						currentIndex = 0;
 						switch(currentDataSet) {
-							case dataSet.DIMENSIONS: {
+							case DIMENSIONS: {
 								layerData = new int[dimensions[INDEX_DIMENSION_WIDTH]][dimensions[INDEX_DIMENSION_HEIGHT]][dimensions[INDEX_DIMENSION_LAYERS]];
 								currentDataSet = dataSet.TILES;
 							}
 						break;
-							case dataSet.TILES: {
+							case TILES: {
 								int tileIndex = 0;
 								for (int layer = 0; layer < dimensions[INDEX_DIMENSION_LAYERS]; layer++) {
 									for (int y = 0; y < dimensions[INDEX_DIMENSION_HEIGHT]; y++) {
@@ -180,11 +180,11 @@ public class LevelLoader {
 								currentDataSet = dataSet.ENTITIES;
 							}
 						break;
-							case dataSet.ENTITIES: {
+							case ENTITIES: {
 								currentDataSet = dataSet.BACKGROUNDS;
 							}
 						break;
-							case dataSet.BACKGROUNDS: ;
+							case BACKGROUNDS: ;
 						break;
 						}
 					}

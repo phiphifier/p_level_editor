@@ -22,20 +22,20 @@ public class LevelEnlarger {
 		int yOffset;
 		int xOffset;
 		switch(vertAlignment) {
-		case ResizeVertAlign.TOP: yOffset = 0;
+		case TOP: yOffset = 0;
 		break;
-		case ResizeVertAlign.MIDDLE: yOffset = extraHeight/2;
+		case MIDDLE: yOffset = extraHeight/2;
 		break;
-		case ResizeVertAlign.BOTTOM: yOffset = extraHeight;
+		case BOTTOM: yOffset = extraHeight;
 		break;
 		default: yOffset = 0;
 		}
 		switch(horiAlignment) {
-		case ResizeHoriAlign.LEFT: xOffset = 0;
+		case LEFT: xOffset = 0;
 		break;
-		case ResizeHoriAlign.MIDDLE: xOffset = extraWidth/2;
+		case MIDDLE: xOffset = extraWidth/2;
 		break;
-		case ResizeHoriAlign.RIGHT: xOffset = extraWidth;
+		case RIGHT: xOffset = extraWidth;
 		break;
 		default: xOffset = 0;
 		}

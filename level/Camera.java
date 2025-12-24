@@ -72,21 +72,21 @@ public class Camera implements Updatable {
 	@Override
 	public void update() {
 		switch(bounds) {
-			case Bounds.NONE: {
+			case NONE: {
 				if (Inputs.isUpPressed()) y -= cameraSpeed*Resources.TILE_SIZE;
 				if (Inputs.isLeftPressed()) x -= cameraSpeed*Resources.TILE_SIZE;
 				if (Inputs.isDownPressed()) y += cameraSpeed*Resources.TILE_SIZE;
 				if (Inputs.isRightPressed()) x += cameraSpeed*Resources.TILE_SIZE;
 			}
 		break;
-			case Bounds.REGULAR: {
+			case REGULAR: {
 				if (Inputs.isUpPressed()) y = Math.max(y-cameraSpeed*Resources.TILE_SIZE, minY);
 				if (Inputs.isLeftPressed()) x = Math.max(x-cameraSpeed*Resources.TILE_SIZE, minX);
 				if (Inputs.isDownPressed()) y = Math.min(y+cameraSpeed*Resources.TILE_SIZE, maxY-viewHeight);
 				if (Inputs.isRightPressed()) x = Math.min(x+cameraSpeed*Resources.TILE_SIZE, maxX-viewWidth);
 			}
 		break;
-			case Bounds.OVER_SCROLL: {
+			case OVER_SCROLL: {
 				if (Inputs.isUpPressed()) y = Math.max(y-cameraSpeed*Resources.TILE_SIZE, minY-viewHeight+Resources.TILE_SIZE);
 				if (Inputs.isLeftPressed()) x = Math.max(x-cameraSpeed*Resources.TILE_SIZE, minX-viewWidth+Resources.TILE_SIZE);
 				if (Inputs.isDownPressed()) y = Math.min(y+cameraSpeed*Resources.TILE_SIZE, maxY-Resources.TILE_SIZE);

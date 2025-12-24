@@ -179,11 +179,11 @@ public abstract class Menu implements Updatable, Drawable, ButtonListener {
 		buttons.clear();
 		// TRIGGER OWNER TO ENABLE OR CLOSE ITS OWENER
 		if (owner != null) switch(doWhat) {
-		case AdditionalCloseOperation.NOTHING: ;
+		case NOTHING: ;
 		break;
-		case AdditionalCloseOperation.ENABLE_OWNER: owner.setEnabled(true);
+		case ENABLE_OWNER: owner.setEnabled(true);
 		break;
-		case AdditionalCloseOperation.CLOSE_ENTIRE_HIERARCHY: owner.close(AdditionalCloseOperation.CLOSE_ENTIRE_HIERARCHY);
+		case CLOSE_ENTIRE_HIERARCHY: owner.close(AdditionalCloseOperation.CLOSE_ENTIRE_HIERARCHY);
 		break;
 		}
 		GameManager.removeUpdatable(this);
