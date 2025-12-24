@@ -1,9 +1,6 @@
 Indev  
-To compile, cd to the p_level_editor folder, and run the following commands:  
-javac main/*.java
-javac config/*.java
-javac ui/*.java
-javac level/*.java
+To compile, cd to the folder containing the p_level_editor folder, and run the following command:  
+javac p_level_editor/*/*.java  
 
 Should be compatible with java 8 and above. Although I've only tested with jdk25
 
